@@ -1,0 +1,25 @@
+--cpu Cortex-M0
+".\objects\startup_stm32f030.o"
+".\objects\bsp.o"
+".\objects\usart.o"
+".\objects\led.o"
+".\objects\systick.o"
+".\objects\stm32f0xx_it.o"
+".\objects\main.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_usart.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_misc.o"
+".\objects\stm32f0xx_rtc.o"
+".\objects\stm32f0xx_pwr.o"
+".\objects\stm32f0xx_exti.o"
+".\objects\stm32f0xx_adc.o"
+".\objects\system_stm32f0xx.o"
+".\objects\cola_os.o"
+".\objects\cola_device.o"
+".\objects\cola_init.o"
+".\objects\app.o"
+--library_type=microlib --strict --scatter ".\Objects\ExecutableFile.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ExecutableFile.map" -o .\Objects\ExecutableFile.axf
